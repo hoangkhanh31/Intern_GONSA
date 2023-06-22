@@ -1,14 +1,14 @@
-﻿namespace CongNo
+﻿namespace GONSA
 {
-    partial class Form1
+    partial class Form2
     {
         /// <summary>
-        ///  Required designer variable.
+        /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        ///  Clean up any resources being used.
+        /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
@@ -23,35 +23,23 @@
         #region Windows Form Designer generated code
 
         /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
         /// </summary>
         private void InitializeComponent()
         {
-            controlCongNo1 = new controlCongNo();
             SuspendLayout();
             // 
-            // controlCongNo1
-            // 
-            controlCongNo1.Location = new Point(17, 16);
-            controlCongNo1.Name = "controlCongNo1";
-            controlCongNo1.Size = new Size(748, 347);
-            controlCongNo1.TabIndex = 0;
-            controlCongNo1.Load += controlCongNo1_Load;
-            // 
-            // Form1
+            // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(846, 482);
-            Controls.Add(controlCongNo1);
-            Name = "Form1";
-            Text = "Form1";
+            ClientSize = new Size(800, 450);
+            Name = "Form2";
+            Text = "Form2";
             ResumeLayout(false);
         }
 
         #endregion
-
-        private controlCongNo controlCongNo1;
     }
 }

@@ -16,3 +16,5 @@ D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\refint\GONSA.dll
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.pdb
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.genruntimeconfig.cache
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\ref\GONSA.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\CongNo.controlCongNo.resources
+D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.Form2.resources
