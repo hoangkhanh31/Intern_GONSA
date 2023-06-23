@@ -28,22 +28,58 @@
         /// </summary>
         private void InitializeComponent()
         {
-            controlDonHangXuat1 = new controlDonHangXuat();
+            ctDonHangXuat = new controlDonHangXuat();
+            btnShow = new Button();
+            btnClear = new Button();
+            btnEdit = new Button();
             SuspendLayout();
             // 
-            // controlDonHangXuat1
+            // ctDonHangXuat
             // 
-            controlDonHangXuat1.Location = new Point(8, 5);
-            controlDonHangXuat1.Name = "controlDonHangXuat1";
-            controlDonHangXuat1.Size = new Size(1011, 1040);
-            controlDonHangXuat1.TabIndex = 0;
+            ctDonHangXuat.Location = new Point(0, -1);
+            ctDonHangXuat.Name = "ctDonHangXuat";
+            ctDonHangXuat.Size = new Size(1080, 585);
+            ctDonHangXuat.TabIndex = 0;
+            // 
+            // btnShow
+            // 
+            btnShow.Location = new Point(809, 421);
+            btnShow.Name = "btnShow";
+            btnShow.Size = new Size(83, 27);
+            btnShow.TabIndex = 1;
+            btnShow.Text = "Show";
+            btnShow.UseVisualStyleBackColor = true;
+            btnShow.Click += btnShow_Click;
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(809, 463);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(83, 29);
+            btnClear.TabIndex = 2;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
+            // 
+            // btnEdit
+            // 
+            btnEdit.Location = new Point(809, 512);
+            btnEdit.Name = "btnEdit";
+            btnEdit.Size = new Size(83, 29);
+            btnEdit.TabIndex = 3;
+            btnEdit.Text = "Edit";
+            btnEdit.UseVisualStyleBackColor = true;
+            btnEdit.Click += btnEdit_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1045, 1061);
-            Controls.Add(controlDonHangXuat1);
+            ClientSize = new Size(1121, 651);
+            Controls.Add(btnEdit);
+            Controls.Add(btnClear);
+            Controls.Add(btnShow);
+            Controls.Add(ctDonHangXuat);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -51,6 +87,9 @@
 
         #endregion
 
-        private controlDonHangXuat controlDonHangXuat1;
+        private controlDonHangXuat ctDonHangXuat;
+        private Button btnShow;
+        private Button btnClear;
+        private Button btnEdit;
     }
 }
