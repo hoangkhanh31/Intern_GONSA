@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "x0yML+smS7Pk5W7ZbgoUt5IiUFGakjm4agmbxXuFqb7jBJ7iTwYbxBGAkn3fnxzEEIAhOPbc3oQFSiZKWHT+VQ==",
+  "success": true,
+  "projectFilePath": "D:\\GitHub\\Intern_GONSA\\GONSA\\BLL\\BLL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Furuya\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Furuya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Furuya\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Furuya\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

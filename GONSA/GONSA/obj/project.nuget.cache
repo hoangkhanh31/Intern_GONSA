@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "ylZ1y07M+kZPbjWo14E2kEypI0oLPGdapJDNyZ6ingxbevSG8PEQnhEcubYpFtKXEImmD8xuCvJ4uqn1CYLNMA==",
+  "dgSpecHash": "hBEGvQ2xfgf33HKgB6NdlU+UTKPme+NohknvfRnXnQ+fWMHp3l8Q9ZzbajHdbndpLqyW6M+OKskcqAmYNQ3KCQ==",
   "success": true,
-  "projectFilePath": "D:\\GitHub\\Intern_GONSA\\GONSA\\GONSA\\GONSA.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\GitHub\\Intern_GONSA\\GONSA\\GONSA\\GUI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Furuya\\.nuget\\packages\\restsharp\\110.2.0\\restsharp.110.2.0.nupkg.sha512",
+    "C:\\Users\\Furuya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Furuya\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\Furuya\\.nuget\\packages\\system.text.json\\7.0.2\\system.text.json.7.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

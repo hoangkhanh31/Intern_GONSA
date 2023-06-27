@@ -5,7 +5,6 @@ D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\GONSA.dll
 D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\GONSA.pdb
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.csproj.AssemblyReference.cache
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.controlDonHangXuat.resources
-D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.Form1.resources
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.csproj.GenerateResource.cache
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.GeneratedMSBuildEditorConfig.editorconfig
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.AssemblyInfoInputs.cache
@@ -17,3 +16,11 @@ D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.pdb
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.genruntimeconfig.cache
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\ref\GONSA.dll
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\CongNo.controlCongNo.resources
+D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.controlTrangThaiGiaoHang.resources
+D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.DonHangXuat.resources
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\RestSharp.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.csproj.CopyComplete
+D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.fTrangThaiGiaoHang.resources
