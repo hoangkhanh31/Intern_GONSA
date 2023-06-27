@@ -1,6 +1,10 @@
 ﻿using BLL;
 using DTO;
 using System.ComponentModel;
+using System.Data;
+using System.Data.Common;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GONSA
 {
@@ -9,7 +13,6 @@ namespace GONSA
         private bool EnableEdit = false;
         private static TrangThaiGiaoHangBUS TrangThaiGiaoHangBUS = new TrangThaiGiaoHangBUS();
         private BindingList<TrangThaiGiaoHangDTO> list = new BindingList<TrangThaiGiaoHangDTO>(TrangThaiGiaoHangBUS.GetList());
-        //private List<TrangThaiGiaoHangDTO> list1 = TrangThaiGiaoHangBUS.GetList();
         public controlTrangThaiGiaoHang()
         {
             InitializeComponent();
@@ -19,6 +22,11 @@ namespace GONSA
         }
 
         #region Methods
+        private void Reload()
+        {
+
+            dtgvTrangThaiGiaoHang.DataSource = list;
+        }
         private void EditState(bool type)
         {
             txtMaTrangThaiGiaoHang.Enabled = type;
@@ -37,14 +45,33 @@ namespace GONSA
             txtTenTrangThai.DataBindings.Add("Text", dtgvTrangThaiGiaoHang.DataSource, "TenTrangThai", true, DataSourceUpdateMode.Never);
             txtMoTa.DataBindings.Add("Text", dtgvTrangThaiGiaoHang.DataSource, "MoTa", true, DataSourceUpdateMode.Never);
         }
+        public static DataTable ConvertToDataTable<T>(BindingList<T> bindingList)
+        {
+            DataTable dataTable = new DataTable();
+
+            PropertyDescriptorCollection properties = TypeDescriptor.GetProperties(typeof(T));
+
+            foreach (PropertyDescriptor prop in properties)
+            {
+                dataTable.Columns.Add(prop.Name, Nullable.GetUnderlyingType(prop.PropertyType) ?? prop.PropertyType);
+            }
+
+            foreach (T item in bindingList)
+            {
+                DataRow row = dataTable.NewRow();
+                foreach (PropertyDescriptor prop in properties)
+                {
+                    row[prop.Name] = prop.GetValue(item) ?? DBNull.Value;
+                }
+                dataTable.Rows.Add(row);
+            }
+
+            return dataTable;
+        }
         #endregion
 
         #region Events
-        private void LoadData()
-        {
-            dtgvTrangThaiGiaoHang.DataSource = null;
-            dtgvTrangThaiGiaoHang.DataSource = list;
-        }
+
         private void btnEdit_Click(object sender, EventArgs e)
         {
             if (!EnableEdit)
@@ -65,6 +92,7 @@ namespace GONSA
             string moTa = txtMoTa.Text;
 
             list.Add(new TrangThaiGiaoHangDTO(maTrangThaiGiaoHang, tenTrangThai, moTa));
+            Reload();
         }
         private void btnDelete_Click(object sender, EventArgs e)
         {
@@ -73,20 +101,25 @@ namespace GONSA
                 dtgvTrangThaiGiaoHang.Rows.RemoveAt(item.Index);
             }
         }
-        #endregion
-
-
         private void btnSave_Click(object sender, EventArgs e)
         {
-
-            string tenTrangThai = txtTenTrangThai.Text;
-            string moTa = txtMoTa.Text;
-
             foreach (DataGridViewRow item in dtgvTrangThaiGiaoHang.SelectedRows)
             {
-                item.Cells["Mã trạng thái"].Value = txtMaTrangThaiGiaoHang.Text;
-
+                item.Cells[0].Value = txtMaTrangThaiGiaoHang.Text;
+                item.Cells[1].Value = txtTenTrangThai.Text;
+                item.Cells[2].Value = txtMoTa.Text;
             }
         }
+        private void txtSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            var dt = ConvertToDataTable(list);
+            DataView dv = dt.DefaultView;
+            dv.RowFilter = String.Format("MaTrangThaiGiaoHang LIKE '%{0}%' " +
+                "OR TenTrangThai LIKE '%{0}%'", txtSearch.Text);
+            dtgvTrangThaiGiaoHang.DataSource = dv;
+
+        }
+        #endregion
+
     }
 }
