@@ -11,9 +11,15 @@ namespace BLL
     public class TrangThaiGiaoHangBUS
     {
         private TrangThaiGiaoHangDAO trangThaiGiaoHangDAO = new TrangThaiGiaoHangDAO();
+        private List<TrangThaiGiaoHangDTO>? list;
         public List<TrangThaiGiaoHangDTO> GetList()
         {
-            return trangThaiGiaoHangDAO.GetList();
+            list = trangThaiGiaoHangDAO.GetList();
+            if (list == null)
+            {
+                list = new List<TrangThaiGiaoHangDTO>();
+            }
+            return list;
         }
     }
 }

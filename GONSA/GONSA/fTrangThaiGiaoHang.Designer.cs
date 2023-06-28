@@ -28,23 +28,47 @@
         /// </summary>
         private void InitializeComponent()
         {
-            controlTrangThaiGiaoHang1 = new controlTrangThaiGiaoHang();
+            control = new controlTrangThaiGiaoHang();
+            btnImport = new Button();
+            btnExport = new Button();
             SuspendLayout();
             // 
-            // controlTrangThaiGiaoHang1
+            // control
             // 
-            controlTrangThaiGiaoHang1.Location = new Point(0, 0);
-            controlTrangThaiGiaoHang1.Name = "controlTrangThaiGiaoHang1";
-            controlTrangThaiGiaoHang1.Size = new Size(1080, 585);
-            controlTrangThaiGiaoHang1.TabIndex = 0;
+            control.Location = new Point(0, 0);
+            control.Name = "control";
+            control.Size = new Size(1080, 585);
+            control.TabIndex = 0;
             // 
-            // fTrangThaiDonHang
+            // btnImport
+            // 
+            btnImport.Location = new Point(57, 606);
+            btnImport.Name = "btnImport";
+            btnImport.Size = new Size(99, 46);
+            btnImport.TabIndex = 1;
+            btnImport.Text = "Import";
+            btnImport.UseVisualStyleBackColor = true;
+            btnImport.Click += btnImport_Click;
+            // 
+            // btnExport
+            // 
+            btnExport.Location = new Point(220, 606);
+            btnExport.Name = "btnExport";
+            btnExport.Size = new Size(99, 46);
+            btnExport.TabIndex = 1;
+            btnExport.Text = "Export";
+            btnExport.UseVisualStyleBackColor = true;
+            btnExport.Click += btnExport_Click;
+            // 
+            // fTrangThaiGiaoHang
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1082, 593);
-            Controls.Add(controlTrangThaiGiaoHang1);
-            Name = "fTrangThaiDonHang";
+            ClientSize = new Size(1081, 682);
+            Controls.Add(btnExport);
+            Controls.Add(btnImport);
+            Controls.Add(control);
+            Name = "fTrangThaiGiaoHang";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "fTrangThaiDonHang";
             ResumeLayout(false);
@@ -52,6 +76,8 @@
 
         #endregion
 
-        private controlTrangThaiGiaoHang controlTrangThaiGiaoHang1;
+        private controlTrangThaiGiaoHang control;
+        private Button btnImport;
+        private Button btnExport;
     }
 }

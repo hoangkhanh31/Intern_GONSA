@@ -30,3 +30,17 @@ D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GUI.pdb
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GUI.genruntimeconfig.cache
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\ref\GUI.dll
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GONSA.fDonHangXuat.resources
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\EPPlus.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\EPPlus.Interfaces.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\EPPlus.System.Drawing.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\System.Security.Cryptography.Pkcs.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Security.Cryptography.Pkcs.dll

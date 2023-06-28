@@ -22,6 +22,35 @@ namespace GONSA
         }
 
         #region Methods
+        public void AddDataWhenImport(BindingList<TrangThaiGiaoHangDTO> list_1)
+        {
+            List<TrangThaiGiaoHangDTO> tempList = new List<TrangThaiGiaoHangDTO>();
+
+            foreach (TrangThaiGiaoHangDTO item1 in list_1)
+            {
+                bool isDuplicate = false;
+                foreach (TrangThaiGiaoHangDTO item in list)
+                {
+                    if (item1.MaTrangThaiGiaoHang == item.MaTrangThaiGiaoHang)
+                    {
+                        isDuplicate = true;
+                        break;
+                    }
+                }
+
+                if (!isDuplicate)
+                {
+                    tempList.Add(item1);
+                }
+            }
+
+            foreach (TrangThaiGiaoHangDTO item in tempList)
+            {
+                list.Add(item);
+            }
+
+            Reload();
+        }
         private void Reload()
         {
 
@@ -45,7 +74,7 @@ namespace GONSA
             txtTenTrangThai.DataBindings.Add("Text", dtgvTrangThaiGiaoHang.DataSource, "TenTrangThai", true, DataSourceUpdateMode.Never);
             txtMoTa.DataBindings.Add("Text", dtgvTrangThaiGiaoHang.DataSource, "MoTa", true, DataSourceUpdateMode.Never);
         }
-        public static DataTable ConvertToDataTable<T>(BindingList<T> bindingList)
+        private static DataTable ConvertToDataTable<T>(BindingList<T> bindingList)
         {
             DataTable dataTable = new DataTable();
 
@@ -68,6 +97,22 @@ namespace GONSA
 
             return dataTable;
         }
+        private bool IsMaTrangThaiGiaoHangExists()
+        {
+            string maTrangThaiGiaoHang = txtMaTrangThaiGiaoHang.Text;
+            foreach (TrangThaiGiaoHangDTO item in list)
+            {
+                if (item.MaTrangThaiGiaoHang == maTrangThaiGiaoHang)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public BindingList<TrangThaiGiaoHangDTO> GetListTrangThaiGiaoHang()
+        {
+            return list;
+        }
         #endregion
 
         #region Events
@@ -87,10 +132,15 @@ namespace GONSA
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
+            if (IsMaTrangThaiGiaoHangExists())
+            {
+                MessageBox.Show("Mã trạng thái đã tồn tại");
+                return;
+            }
+
             string maTrangThaiGiaoHang = txtMaTrangThaiGiaoHang.Text;
             string tenTrangThai = txtTenTrangThai.Text;
             string moTa = txtMoTa.Text;
-
             list.Add(new TrangThaiGiaoHangDTO(maTrangThaiGiaoHang, tenTrangThai, moTa));
             Reload();
         }
@@ -103,6 +153,12 @@ namespace GONSA
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
+            if (IsMaTrangThaiGiaoHangExists())
+            {
+                MessageBox.Show("Mã trạng thái đã tồn tại");
+                return;
+            }
+
             foreach (DataGridViewRow item in dtgvTrangThaiGiaoHang.SelectedRows)
             {
                 item.Cells[0].Value = txtMaTrangThaiGiaoHang.Text;
