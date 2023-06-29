@@ -54,54 +54,66 @@ namespace GONSA
             try
             {
                 ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
-                // mở file excel
-                var package = new ExcelPackage(new FileInfo(@"C:\Users\Furuya\Desktop\testImport.xlsx"));
 
-                // lấy ra sheet đầu tiên để thao tác
-                ExcelWorksheet workSheet = package.Workbook.Worksheets[0];
+                // Sử dụng OpenFileDialog để lấy đường dẫn file Excel
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "Excel Files|*.xlsx;*.xls";
 
-                // duyệt tuần tự từ dòng thứ 2 đến dòng cuối cùng của file. lưu ý file excel bắt đầu từ số 1 không phải số 0
-                for (int i = workSheet.Dimension.Start.Row + 1; i <= workSheet.Dimension.End.Row; i++)
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
-                    try
+                    string filePath = openFileDialog.FileName;
+
+                    // mở file excel
+                    var package = new ExcelPackage(new FileInfo(filePath));
+
+                    // lấy ra sheet đầu tiên để thao tác
+                    ExcelWorksheet workSheet = package.Workbook.Worksheets[0];
+
+                    // duyệt từng dòng từ dòng thứ 2 đến dòng cuối cùng của file (lưu ý file excel bắt đầu từ số 1 không phải số 0)
+                    for (int i = workSheet.Dimension.Start.Row + 1; i <= workSheet.Dimension.End.Row; i++)
                     {
-                        // biến j biểu thị cho một column trong file
-                        int j = 1;
-
-                        // lấy ra cột họ tên tương ứng giá trị tại vị trí [i, 1]. i lần đầu là 2
-                        // tăng j lên 1 đơn vị sau khi thực hiện xong câu lệnh
-                        string maTrangThai = "";
-                        string tenTrangThai = "";
-                        string moTa = "";
-
-                        var maTrangThai_tmp = workSheet.Cells[i, j++].Value?.ToString();
-                        if(maTrangThai_tmp != null)
+                        try
                         {
-                            maTrangThai = maTrangThai_tmp;
-                        }
+                            // biến j biểu thị cho một cột trong file
+                            int j = 1;
 
-                        var tenTrangThai_tmp = workSheet.Cells[i, j++].Value?.ToString();
-                        if (tenTrangThai_tmp != null)
+                            // lấy ra cột mã trạng thái tương ứng giá trị tại vị trí [i, 1]. Lần đầu i là 2
+                            // tăng j lên 1 đơn vị sau khi thực hiện xong câu lệnh
+                            string maTrangThai = "";
+                            string tenTrangThai = "";
+                            string moTa = "";
+
+                            var maTrangThai_tmp = workSheet.Cells[i, j++].Value?.ToString();
+                            if (maTrangThai_tmp != null)
+                            {
+                                maTrangThai = maTrangThai_tmp;
+                            }
+
+                            var tenTrangThai_tmp = workSheet.Cells[i, j++].Value?.ToString();
+                            if (tenTrangThai_tmp != null)
+                            {
+                                tenTrangThai = tenTrangThai_tmp;
+                            }
+
+                            var moTa_tmp = workSheet.Cells[i, j++].Value?.ToString();
+                            if (moTa_tmp != null)
+                            {
+                                moTa = moTa_tmp;
+                            }
+
+                            TrangThaiGiaoHangDTO trangthai = new TrangThaiGiaoHangDTO(maTrangThai, tenTrangThai, moTa);
+
+                            // Add vào list
+                            list.Add(trangthai);
+                        }
+                        catch (Exception ex)
                         {
-                            tenTrangThai = tenTrangThai_tmp;
+                            MessageBox.Show("Error on row " + i + ": " + ex.Message);
                         }
-
-                        var moTa_tmp = workSheet.Cells[i, j++].Value?.ToString();
-                        if (moTa_tmp != null)
-                        {
-                            moTa = moTa_tmp;
-                        }
-
-                        // tạo UserInfo từ dữ liệu đã lấy được
-                        TrangThaiGiaoHangDTO trangthai = new TrangThaiGiaoHangDTO(maTrangThai,tenTrangThai,moTa);
-
-                        // add UserInfo vào danh sách userList
-                        list.Add(trangthai);
                     }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show("Error on row " + i + ": " + ex.Message);
-                    }
+
+                    // Đóng package
+                    package.Dispose();
                 }
             }
             catch (Exception ex)
@@ -111,6 +123,7 @@ namespace GONSA
 
             control.AddDataWhenImport(list);
         }
+
         private void btnImport_Click(object sender, EventArgs e)
         {
             ImportFromExcel();
