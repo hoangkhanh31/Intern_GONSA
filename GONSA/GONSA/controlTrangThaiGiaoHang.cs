@@ -113,6 +113,10 @@ namespace GONSA
         {
             return list;
         }
+        public DataGridView GetDTGV()
+        {
+            return dtgvTrangThaiGiaoHang;
+        }
         #endregion
 
         #region Events
@@ -153,12 +157,6 @@ namespace GONSA
         }
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (IsMaTrangThaiGiaoHangExists())
-            {
-                MessageBox.Show("Mã trạng thái đã tồn tại");
-                return;
-            }
-
             foreach (DataGridViewRow item in dtgvTrangThaiGiaoHang.SelectedRows)
             {
                 item.Cells[0].Value = txtMaTrangThaiGiaoHang.Text;

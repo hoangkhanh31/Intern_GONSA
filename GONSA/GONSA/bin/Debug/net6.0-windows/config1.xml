@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <appSettings>
+    <add key="DS001" value="Chờ chứng từ" />
+    <add key="DS002" value="Đã đến trạm trung chuyển" />
+    <add key="DS003" value="Đã đến trạm trung chuyển một phần" />
+    <add key="DS004" value="Đã giao hàng và thu tiền" />
+    <add key="DS005" value="Đã giao hàng và thu tiền một phần" />
+    <add key="DS006" value="Đã giao hàng, chưa thu tiền" />
+    <add key="DS007" value="Đã giao hàng, khách hàng chuyển khoản" />
+    <add key="DS008" value="Đã nhận chứng từ" />
+    <add key="DS009" value="Đang giao hàng" />
+    <add key="DS010" value="Đang giao việc" />
+    <add key="DS011" value="Đủ hàng" />
+    <add key="DS012" value="Giao không thành công, cần giao lại" />
+    <add key="DS013" value="Giao một phần" />
+    <add key="DS014" value="Kế toán đã xác nhận" />
+    <add key="DS015" value="Khách trả hết đơn" />
+  </appSettings>
+</configuration>

@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             control = new controlTrangThaiGiaoHang();
-            btnImport = new Button();
-            btnExport = new Button();
+            btnImportExcel = new Button();
+            btnExportExcel = new Button();
+            btnExportXML = new Button();
+            btnDecodeXml = new Button();
             SuspendLayout();
             // 
             // control
@@ -40,33 +42,55 @@
             control.Size = new Size(1080, 585);
             control.TabIndex = 0;
             // 
-            // btnImport
+            // btnImportExcel
             // 
-            btnImport.Location = new Point(57, 606);
-            btnImport.Name = "btnImport";
-            btnImport.Size = new Size(99, 46);
-            btnImport.TabIndex = 1;
-            btnImport.Text = "Import";
-            btnImport.UseVisualStyleBackColor = true;
-            btnImport.Click += btnImport_Click;
+            btnImportExcel.Location = new Point(57, 606);
+            btnImportExcel.Name = "btnImportExcel";
+            btnImportExcel.Size = new Size(99, 46);
+            btnImportExcel.TabIndex = 1;
+            btnImportExcel.Text = "Import Excel";
+            btnImportExcel.UseVisualStyleBackColor = true;
+            btnImportExcel.Click += btnImport_Click;
             // 
-            // btnExport
+            // btnExportExcel
             // 
-            btnExport.Location = new Point(220, 606);
-            btnExport.Name = "btnExport";
-            btnExport.Size = new Size(99, 46);
-            btnExport.TabIndex = 1;
-            btnExport.Text = "Export";
-            btnExport.UseVisualStyleBackColor = true;
-            btnExport.Click += btnExport_Click;
+            btnExportExcel.Location = new Point(220, 606);
+            btnExportExcel.Name = "btnExportExcel";
+            btnExportExcel.Size = new Size(99, 46);
+            btnExportExcel.TabIndex = 1;
+            btnExportExcel.Text = "Export Excel";
+            btnExportExcel.UseVisualStyleBackColor = true;
+            btnExportExcel.Click += btnExport_Click;
+            // 
+            // btnExportXML
+            // 
+            btnExportXML.Location = new Point(407, 606);
+            btnExportXML.Name = "btnExportXML";
+            btnExportXML.Size = new Size(104, 46);
+            btnExportXML.TabIndex = 2;
+            btnExportXML.Text = "Export XML";
+            btnExportXML.UseVisualStyleBackColor = true;
+            btnExportXML.Click += btnExportXML_Click;
+            // 
+            // btnDecodeXml
+            // 
+            btnDecodeXml.Location = new Point(546, 606);
+            btnDecodeXml.Name = "btnDecodeXml";
+            btnDecodeXml.Size = new Size(104, 46);
+            btnDecodeXml.TabIndex = 2;
+            btnDecodeXml.Text = "Decode XML";
+            btnDecodeXml.UseVisualStyleBackColor = true;
+            btnDecodeXml.Click += btnDecodeXml_Click;
             // 
             // fTrangThaiGiaoHang
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1081, 682);
-            Controls.Add(btnExport);
-            Controls.Add(btnImport);
+            Controls.Add(btnDecodeXml);
+            Controls.Add(btnExportXML);
+            Controls.Add(btnExportExcel);
+            Controls.Add(btnImportExcel);
             Controls.Add(control);
             Name = "fTrangThaiGiaoHang";
             StartPosition = FormStartPosition.CenterScreen;
@@ -77,7 +101,9 @@
         #endregion
 
         private controlTrangThaiGiaoHang control;
-        private Button btnImport;
-        private Button btnExport;
+        private Button btnImportExcel;
+        private Button btnExportExcel;
+        private Button btnExportXML;
+        private Button btnDecodeXml;
     }
 }
