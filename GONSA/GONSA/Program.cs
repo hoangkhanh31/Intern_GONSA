@@ -1,3 +1,5 @@
+using GUI;
+
 namespace GONSA
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace GONSA
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new fTrangThaiGiaoHang());
+            Application.Run(new Form1());
         }
     }
 }

@@ -41,6 +41,7 @@
             control.Name = "control";
             control.Size = new Size(1080, 585);
             control.TabIndex = 0;
+            control.Load += control_Load;
             // 
             // btnImportExcel
             // 

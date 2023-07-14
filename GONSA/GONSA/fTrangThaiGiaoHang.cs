@@ -278,7 +278,7 @@ namespace GONSA
                             if (attributes != null)
                             {
                                 XmlAttribute? keyAttribute = attributes["key"];
-                                
+
                                 if (keyAttribute != null)
                                 {
                                     XmlAttribute? valueAttribute = attributes["value"];
@@ -290,12 +290,12 @@ namespace GONSA
                                     }
                                     string encryptedKey = keyAttribute.Value;
                                     string decryptedKey = Decrypt(encryptedKey);
-                                    
+
                                     writer.WriteLine("MaTrangThai: " + decryptedKey + "\t\tMoTa: " + decryptedValue);
                                 }
                             }
                         }
-                    } 
+                    }
                 }
 
                 Console.WriteLine("Đã ghi dữ liệu vào file txt thành công.");
@@ -304,6 +304,11 @@ namespace GONSA
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void control_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
