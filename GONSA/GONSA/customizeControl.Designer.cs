@@ -1,6 +1,6 @@
 ﻿namespace GUI
 {
-    partial class Form1
+    partial class customizeControl
     {
         /// <summary>
         /// Required designer variable.

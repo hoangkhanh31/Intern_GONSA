@@ -353,7 +353,7 @@ namespace CustomControls.RJControls
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            this.OnKeyPress(e);            
+            this.OnKeyPress(e);
         }
 
         private void textBox1_Enter(object sender, EventArgs e)
