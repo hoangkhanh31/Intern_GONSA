@@ -34,5 +34,8 @@
     <Compile Update="Control\RJTextBox.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="testEntityFrameWork.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

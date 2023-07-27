@@ -30,6 +30,7 @@
         {
             controlTextBox1 = new controlTextBox();
             controlComboBox1 = new Control.controlComboBox();
+            controlTextBox2 = new controlTextBox();
             SuspendLayout();
             // 
             // controlTextBox1
@@ -41,17 +42,25 @@
             // 
             // controlComboBox1
             // 
-            controlComboBox1.EnabledRead = true;
+            controlComboBox1.EnabledRead = false;
             controlComboBox1.Location = new Point(270, 117);
             controlComboBox1.Name = "controlComboBox1";
-            controlComboBox1.Size = new Size(191, 23);
+            controlComboBox1.Size = new Size(161, 23);
             controlComboBox1.TabIndex = 1;
+            // 
+            // controlTextBox2
+            // 
+            controlTextBox2.Location = new Point(499, 60);
+            controlTextBox2.Name = "controlTextBox2";
+            controlTextBox2.Size = new Size(176, 23);
+            controlTextBox2.TabIndex = 2;
             // 
             // customizeControlFunction
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(controlTextBox2);
             Controls.Add(controlComboBox1);
             Controls.Add(controlTextBox1);
             Name = "customizeControlFunction";
@@ -63,5 +72,6 @@
 
         private controlTextBox controlTextBox1;
         private Control.controlComboBox controlComboBox1;
+        private controlTextBox controlTextBox2;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.Design.Serialization;
 using System.Data;
 using System.Drawing;
 using System.Linq;
@@ -13,19 +14,34 @@ namespace GUI
 {
     public partial class controlTextBox : UserControl
     {
+        public TextBox GetTextBox()
+        {
+            return textBox1;
+        }
+
         public controlTextBox()
         {
             InitializeComponent();
         }
 
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        public new string Text
         {
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != (char)Keys.Back)
+            get
             {
-                e.Handled = true;
+                return textBox1.Text;
+            }
+            set
+            {
+                textBox1.Text = value;
             }
         }
-        private void textBox1_TextChanged(object sender, EventArgs e)
+
+        #region Methods
+        private string RemoveCommaFromText(string input)
+        {
+            return input.Replace(",", "");
+        }
+        void DecimalNumber()
         {
             if (!string.IsNullOrEmpty(textBox1.Text))
             {
@@ -46,5 +62,73 @@ namespace GUI
                 }
             }
         }
+
+        void DecimalNumber_2()
+        {
+            string input = RemoveCommaFromText(textBox1.Text);
+
+            string[] parts = input.Split('.',2);
+
+            string secondPart = "";
+            if (parts.Length == 2)
+            {
+                input = parts[0];    //Phần nguyên
+                secondPart = "." + parts[1];   // Phần phân số
+            }
+
+            StringBuilder result = new StringBuilder(input);
+            int count = 1;
+
+            for (int i = input.Length - 1; i >= 0 ; i--)
+            {
+                if (input.Length < 4)
+                {
+                    textBox1.Text = input + secondPart;
+                    return;
+                }
+                if (input[i].Equals(','))
+                {
+                    count = 1;
+                    continue;
+                }
+
+                if (count == 3 && i>0)
+                {
+                    result = result.Insert(i, ",");
+                    count = 1;
+                }
+                else
+                {
+                    count++;
+                }
+            }
+                
+            string outputText = result.ToString();
+
+            textBox1.TextChanged -= textBox1_TextChanged;
+            textBox1.Text = result.ToString() + secondPart ;
+            textBox1.SelectionStart = textBox1.Text.Length;
+            textBox1.TextChanged += textBox1_TextChanged;
+        }
+        #endregion
+        
+        #region Events
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (textBox1.Text.Contains(".") && e.KeyChar == '.')
+            {
+                e.Handled = true; // không cho nhập dấu chấm nữa
+            }
+
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.' && e.KeyChar != (char)Keys.Back )
+            {
+                e.Handled = true;
+            }
+        }
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            DecimalNumber_2();
+        }
+        #endregion
     }
 }

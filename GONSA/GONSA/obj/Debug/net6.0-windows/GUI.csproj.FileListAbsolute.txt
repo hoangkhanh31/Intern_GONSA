@@ -50,3 +50,13 @@ D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GUI.customizeControl
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GUI.customizeControlFunction.resources
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GUI.Control.controlComboBox.resources
 D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\CustomControls.RJControls.RJComboBox.resources
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+D:\GitHub\Intern_GONSA\GONSA\GONSA\obj\Debug\net6.0-windows\GUI.testEntityFrameWork.resources
