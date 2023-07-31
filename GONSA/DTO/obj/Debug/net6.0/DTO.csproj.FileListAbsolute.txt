@@ -10,3 +10,5 @@ D:\GitHub\Intern_GONSA\GONSA\DTO\obj\Debug\net6.0\DTO.dll
 D:\GitHub\Intern_GONSA\GONSA\DTO\obj\Debug\net6.0\refint\DTO.dll
 D:\GitHub\Intern_GONSA\GONSA\DTO\obj\Debug\net6.0\DTO.pdb
 D:\GitHub\Intern_GONSA\GONSA\DTO\obj\Debug\net6.0\ref\DTO.dll
+D:\GitHub\Intern_GONSA\GONSA\DTO\bin\Debug\net6.0\DTO.runtimeconfig.json
+D:\GitHub\Intern_GONSA\GONSA\DTO\obj\Debug\net6.0\DTO.genruntimeconfig.cache

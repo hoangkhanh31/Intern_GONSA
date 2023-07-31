@@ -17,11 +17,15 @@ namespace GONSA
         {
             InitializeComponent();
             EditState(EnableEdit);
-            dtgvTrangThaiGiaoHang.DataSource = list;
+            LoadDTGV();
             Binding();
         }
 
         #region Methods
+        void LoadDTGV()
+        {
+            dtgvTrangThaiGiaoHang.DataSource = list;
+        }
         public void AddDataWhenImport(BindingList<TrangThaiGiaoHangDTO> list_1)
         {
             List<TrangThaiGiaoHangDTO> tempList = new List<TrangThaiGiaoHangDTO>();

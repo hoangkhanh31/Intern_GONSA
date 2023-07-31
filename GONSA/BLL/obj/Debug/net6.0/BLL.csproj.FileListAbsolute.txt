@@ -15,3 +15,5 @@ D:\GitHub\Intern_GONSA\GONSA\BLL\bin\Debug\net6.0\DTO.dll
 D:\GitHub\Intern_GONSA\GONSA\BLL\bin\Debug\net6.0\DAL.pdb
 D:\GitHub\Intern_GONSA\GONSA\BLL\bin\Debug\net6.0\DTO.pdb
 D:\GitHub\Intern_GONSA\GONSA\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete
+D:\GitHub\Intern_GONSA\GONSA\BLL\bin\Debug\net6.0\BLL.runtimeconfig.json
+D:\GitHub\Intern_GONSA\GONSA\BLL\obj\Debug\net6.0\BLL.genruntimeconfig.cache

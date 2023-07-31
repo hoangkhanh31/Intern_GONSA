@@ -14,7 +14,7 @@ namespace DAL
         {
             
         }
-    public List<TrangThaiGiaoHangDTO>? GetList()
+        public List<TrangThaiGiaoHangDTO>? GetList()
         {
             Uri Url = new Uri("http://data.gonsa.com.vn/api/order/getTrangThaiGiaoHang");
             var restClient = new RestClient(Url);

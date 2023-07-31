@@ -13,3 +13,5 @@ D:\GitHub\Intern_GONSA\GONSA\DAL\obj\Debug\net6.0\DAL.dll
 D:\GitHub\Intern_GONSA\GONSA\DAL\obj\Debug\net6.0\refint\DAL.dll
 D:\GitHub\Intern_GONSA\GONSA\DAL\obj\Debug\net6.0\DAL.pdb
 D:\GitHub\Intern_GONSA\GONSA\DAL\obj\Debug\net6.0\ref\DAL.dll
+D:\GitHub\Intern_GONSA\GONSA\DAL\bin\Debug\net6.0\DAL.runtimeconfig.json
+D:\GitHub\Intern_GONSA\GONSA\DAL\obj\Debug\net6.0\DAL.genruntimeconfig.cache
