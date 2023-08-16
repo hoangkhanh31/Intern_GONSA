@@ -34,6 +34,7 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(24, 25);
             dataGridView1.Name = "dataGridView1";
@@ -41,13 +42,13 @@
             dataGridView1.Size = new Size(747, 340);
             dataGridView1.TabIndex = 0;
             // 
-            // testEntityFrameWork
+            // ftestEntityFrameWork
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(845, 478);
             Controls.Add(dataGridView1);
-            Name = "testEntityFrameWork";
+            Name = "ftestEntityFrameWork";
             Text = "testEntityFrameWork";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);

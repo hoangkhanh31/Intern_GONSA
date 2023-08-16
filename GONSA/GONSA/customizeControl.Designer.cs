@@ -96,7 +96,7 @@
             label2.TabIndex = 2;
             label2.Text = "Mật Khẩu";
             // 
-            // Form1
+            // customizeControl
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -105,7 +105,7 @@
             Controls.Add(label1);
             Controls.Add(rjTextBox2);
             Controls.Add(rjTextBox1);
-            Name = "Form1";
+            Name = "customizeControl";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);

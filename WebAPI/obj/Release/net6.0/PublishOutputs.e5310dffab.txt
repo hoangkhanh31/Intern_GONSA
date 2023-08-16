@@ -1,0 +1,11 @@
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\WebAPI.exe
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\WebAPI.dll
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\WebAPI.deps.json
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\WebAPI.runtimeconfig.json
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\WebAPI.pdb
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\GitHub\Intern_GONSA\WebAPI\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll

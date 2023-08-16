@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion.Internal;
 
 namespace API.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class CbnvGonsaController : ControllerBase
@@ -28,8 +28,8 @@ namespace API.Controllers
             }
             catch
             {
-                return StatusCode(StatusCodes.Status500InternalServerError); 
-                //return BadRequest(400);
+                //return StatusCode(StatusCodes.Status500InternalServerError); 
+                return BadRequest(400);
             }
         }
 

@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\GitHub\Intern_GONSA\API\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2023-08-07T10:06:24.0814623Z;True|2023-08-07T17:03:52.8503618+07:00;True|2023-08-07T16:57:47.5820294+07:00;True|2023-08-07T16:57:38.8611673+07:00;True|2023-08-07T16:55:55.4934059+07:00;True|2023-08-07T16:47:29.0444244+07:00;True|2023-08-07T16:28:08.2476405+07:00;False|2023-08-07T16:27:56.3050840+07:00;True|2023-08-07T16:24:33.9952917+07:00;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="Gonsa">
+      <Value>Server=localhost%3bDatabase=GONSA%3bTrusted_Connection=True%3bTrustServerCertificate=True%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+  <ItemGroup>
+    <EFMigrations Include="API.Models.GonsaContext">
+      <Value>Server=localhost%3bDatabase=GONSA%3bTrusted_Connection=True%3bTrustServerCertificate=True%3b</Value>
+    </EFMigrations>
+  </ItemGroup>
+</Project>

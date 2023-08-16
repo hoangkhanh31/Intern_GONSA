@@ -17,7 +17,7 @@ namespace GUI
         public ftestEntityFrameWork()
         {
             InitializeComponent();
-            
+
             LoadDTGV();
         }
 
@@ -27,9 +27,9 @@ namespace GUI
             {
                 var sinhVienData = from c in db.SinhViens select c;
 
-                if (sinhVienData != null) 
+                if (sinhVienData != null)
                 {
-                    if (sinhVienData.Count() > 0 )
+                    if (sinhVienData.Count() > 0)
                     {
                         dataGridView1.DataSource = sinhVienData.ToList();
                     }
