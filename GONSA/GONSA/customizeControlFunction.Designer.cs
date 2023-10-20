@@ -42,7 +42,7 @@
             // 
             // controlComboBox1
             // 
-            controlComboBox1.EnabledRead = false;
+            controlComboBox1.EnabledRead = true;
             controlComboBox1.Location = new Point(270, 117);
             controlComboBox1.Name = "controlComboBox1";
             controlComboBox1.Size = new Size(161, 23);

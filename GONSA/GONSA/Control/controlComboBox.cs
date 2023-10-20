@@ -31,8 +31,8 @@ namespace GUI.Control
             comboBox1.DataSource = cities;
             comboBox1.SelectedIndex = 2;
             
-            initialValue = comboBox1.Text;
-            RestoreInitialValue();
+            initialValue = comboBox1.Text; 
+            //RestoreInitialValue();
         }
         
         //Properties
